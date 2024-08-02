@@ -3,8 +3,12 @@ def is_leap(Y):
         if Y%100 == 0:
             if Y%400 ==0:
                 return True
+            else:
+                return False
         else:
             return True 
+    else:
+        return False
 
 
 def season_stamp(Y, M, D):
