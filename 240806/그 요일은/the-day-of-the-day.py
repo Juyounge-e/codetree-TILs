@@ -7,7 +7,7 @@ weekdays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 # 각 날짜가 해당 연도의 몇번째 날인지 구하는 함수
 def cal_days(m, d):
     cnt = 0
-    for i in range(1, m-1):
+    for i in range(1, m):
         cnt += leap_days[i]
     cnt += d
     return cnt
