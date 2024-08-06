@@ -18,11 +18,13 @@ def howmanyweekday(m1, d1, m2, d2, day):
 
     # 날짜 차이 계산
     diff = end_cnt - start_cnt
-    diff -= weekdays.index(day)
+    
+    cnt = 0
+    number = diff - weekdays.index(day)
 
     # 차이일을 7로 나눈 몫을 계산하여 특정 요일의 발생 횟수 계산
-    diff = (diff + 7) // 7
-    return diff 
+    cnt = (number + 7) // 7
+    return cnt
 
 # 입력
 m1, d1, m2, d2 = map(int, input().split())
