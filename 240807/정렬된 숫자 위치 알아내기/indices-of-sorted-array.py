@@ -24,9 +24,9 @@ arr = list(map(int, input().split()))
 numbers = [(num,i) for i, num in enumerate(arr)] # 수, 인덱스로 배열 보정 
 answer = [0 for _ in range(n)] # 정답 배열 초기화 
 
-number.sort(key = lambda x:(x[0], x[1]))
+numbers.sort(key = lambda x:(x[0], x[1]))
 
 for i, (num, idx) in enumerate(numbers):
-    answer[index] = i +1 # 인덱스 보정 
+    answer[idx] = i +1 # 인덱스 보정 
 
-print(" ".join(map(int, answer)))
+print(" ".join(map(str, answer)))
